@@ -8,3 +8,21 @@ The LM35 temperature sensor measures the temperature.
 When the temperature exceeds 30°C, a buzzer is activated as an alarm.
 The measured temperature is transmitted to an Android device via the HC-06 Bluetooth module.
 When the STOP command is given from serial, Bluetooth is silenced.
+
+
+Wiring Diagram
+LM35 Connections:
+
+VCC → Arduino 5V
+GND → Arduino GND
+OUT → Arduino A0
+HC-06 Connections:
+
+VCC → Arduino 5V
+GND → Arduino GND
+TX → Arduino D2
+RX → Arduino D3 (use a voltage divider to reduce the signal to 3.3V)
+Buzzer Connections:
+
+Positive lead → Arduino D8
+Negative lead → Arduino GND
